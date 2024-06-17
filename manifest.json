@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Anime Ratings",
+    "version": "1.0",
+    "description": "Detecta e exibe a seleção de texto na página.",
+    "permissions": ["scripting", "activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["scripts/seu-script-de-web-scraping.js"]
+      }],
+    "action": {
+      "default_popup": "popup/index.html",
+      "default_icon": {
+        "16": "images/iconMyanime.png",
+        "48": "images/iconMyanime.png",
+        "128": "images/iconMyanime.png"
+      }
+    }
+  }
+  
